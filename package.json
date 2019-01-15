@@ -1,0 +1,23 @@
+{
+  "name": "your_idea",
+  "version": "1.0.0",
+  "description": "A website to share ideas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThreewayDude/your_idea.git"
+  },
+  "author": "Hritik Dutta, Mrigank Singh, Kushal Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThreewayDude/your_idea/issues"
+  },
+  "homepage": "https://github.com/ThreewayDude/your_idea#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
