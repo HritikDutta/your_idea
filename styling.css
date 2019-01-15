@@ -1,0 +1,45 @@
+.container{
+    margin-left: 600px;
+    margin-top: 50px
+}
+#Title_box{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-weight:normal;
+    color: 
+}
+.Title{
+    width: 500px;
+    height: 20px;
+    padding: 1px 1px;
+}
+#Description_box
+{
+    padding-left: 1.5px;   
+}
+#textbox{
+width: 80px;
+    float: left;
+}
+#Description{
+    margin-top: 1px;
+    margin-bottom: 21px;
+}
+#submit{
+    margin-left: 300px;
+    margin-top: 20px;        
+}
+.idea{
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+.text{
+    margin-top: 5px;
+    margin-bottom: 20px
+}
+#text1{
+    margin-top: 6px;
+    margin-bottom: 30px;
+    font-weight: bold
+}
