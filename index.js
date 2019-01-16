@@ -1,12 +1,12 @@
 const express = require('express')
-const path = require('path')
+const postController = require('./controllers/post')
 
 const app = express()
 
+app.set('view engine', 'ejs')
+
 app.use(express.static('./views/'))
 
-app.get('/post', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/Post.html'))
-})
+postController(app)
 
 app.listen(3000)
