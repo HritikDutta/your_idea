@@ -1,4 +1,4 @@
-* {
+body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -50,7 +50,7 @@ input[type="checkbox"]:checked + label span::before {
     color: #080;
  }
 
-#post {
+#share-post {
     width: 30rem;
     
     margin: auto;
@@ -109,4 +109,35 @@ input[type="checkbox"]:checked + label span::before {
 
 #submit-box {
     grid-column: 2;
+}
+
+.feed {
+    width: 30rem;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.feed li {
+    list-style: none;
+    margin: 0.5rem;
+}
+
+.post {
+    border: 1px #000 solid;
+    border-radius: 0.3rem;
+    padding: 0.8rem;
+}
+
+.post h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.post p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
 }

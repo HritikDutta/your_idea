@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="styles/post.css" />
     </head>
     <body>
-        <form id="post">
+        <form id="share-post">
             <div class="container" id="title-box">
                 <input placeholder="Title" id="title" type="text" />
             </div>
@@ -28,5 +28,16 @@
                 </div>
             </div>
         </form>
+
+        <ul class="feed">
+            <% for (var i = 0; i < posts.length; i++) { %>
+            <li>
+                <div class="post">
+                    <h2><%= posts[i].title %></h2>
+                    <p><%= posts[i].description %></p>
+                </div>
+            </li>
+            <% } %>
+        </ul>
     </body>
 </html>

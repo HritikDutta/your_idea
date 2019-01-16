@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#post').on('submit', function() {
+    $('#share-post').on('submit', function() {
         var post = {
             title: $('#title').val(),
             description: $('#description').val(),
