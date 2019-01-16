@@ -4,7 +4,7 @@ $(document).ready(function() {
         var post = {
             title: $('#title').val(),
             description: $('#description').val(),
-            pin: $('#pin').is(':checked')
+            pin: $('#pin-profile').is(':checked')
         }
 
         $.ajax({
