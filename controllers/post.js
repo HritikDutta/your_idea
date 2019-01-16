@@ -7,8 +7,4 @@ module.exports = function (app) {
         res.render('post')
     })
 
-    app.post('/post', urlencodedParser, (req, res) => {
-        console.log(req.body)
-    })
-
 }
