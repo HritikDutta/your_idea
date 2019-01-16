@@ -7,8 +7,6 @@ app.set('view engine', 'ejs')
 
 app.use(express.static('./views/'))
 
-app.post('/post', urlencodedParser, (req, res) => {
-    console.log(req.body)
-})
+postController(app)
 
 app.listen(3000)
