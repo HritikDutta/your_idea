@@ -3,8 +3,8 @@ var urlencodedParser = bodyParser.urlencoded({extended: false})
 
 var postList = [
     {
-        title: 'Title 1',
-        description: 'Description 1.',
+        title: 'Test Title',
+        description: 'Test description.',
         pin: 'false'
     }
 ]
