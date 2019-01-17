@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="container">
+            <div>
+                <p>First-name &nbsp;: &nbsp;<input type="text" id="name1"></p>
+            </div>
+            <div>
+                <p>Middle-name &nbsp;: &nbsp;<input type="text"></p>
+            </div>
+            <div>
+                <p>Last-name &nbsp;:&nbsp;<input type="text" id="name2"></p>
+            </div>
+            <div>
+                <p>Type your password &nbsp;: &nbsp;<input type="password" id="password1"></p>
+                <p>Re-enter your password &nbsp;: &nbsp;<input type="password" id="password2"></p>
+            </div>
+            <div>
+                <p>Mobile-number &nbsp;: &nbsp;<input type="text" id="mobile"></p>
+                <p>E-mail address &nbsp;: &nbsp;<input type="email" id="mail"></p>
+            </div>
+            <div>
+                <p>DOB &nbsp;: &nbsp;<input type="date" id="dob"></p>
+            </div>
+            <div>
+                <p>Select your gender : <select id="gender" name="gender"><option>Male</option><option>Female</option><option>Other</option></select></p>
+            </div>
+            <div>
+                <button id="button" onclick="check()">Submit</button>
+            </div>
+            <script>
+                function check()
+                {
+                    var mail=document.getElementById("mail").value;
+                    var mobile1=document.getElementById("mobile").value;
+                    var password1=document.getElementById("password1").value;
+                    var username1=document.getElementById("name1").value;
+                    var username2=document.getElementById("name2").value; 
+                   var password2=document.getElementById("password2").value;
+                    var dob=document.getElementById("dob").value;
+                    if(password1!=password2)
+                        {
+                            window.alert("Password do not match");
+                        }
+                    else if(password1.length<8){
+                        window.alert("Password is too short");
+                    }
+                    else if(/[A-Z]/g.test(password1)==false)
+                        {
+                            window.alert("Password should contain atleast 1 capital letter");
+                        }
+                    else if(/\d/g.test(password1)==false)
+                        {
+                            window.alert("Password should contain atleast 1 digit")
+                        }
+                    if(username1.length==0)
+                        {
+                            window.alert("First name can't be empty");
+                        }
+                    if(username2.length==0)
+                        {
+                            window.alert("Last name can't be empty");
+                        }
+                    if(dob.length==0)
+                        {
+                            window.alert("DOB is compulsory");
+                        }
+                    if(mobile1.length<10&&mobile1.length>=13)
+                        {
+                            window.alert("Invalid mobile-number");
+                        }
+                    else if(/[A-Z]/g.test(mobile1)==true)
+                        {
+                            window.alert("Invalid mobile-number");
+                        }
+                    else if(/[a-z]/g.test(mobile1)==true)
+                        {
+                            window.alert("Invalid mobile-number");
+                        }
+                    else if(/[-\/\\^$*+?.()|[\]{}]/g.test(mobile1)==true)
+                        {
+                            window.alert("Invalid mobile-number");
+                        }
+                    if(mail.length==0)
+                        {
+                            window.alert("Please enter your e-mail mail");
+                        }
+                    else if(/@/g.test(mail)==false)
+                        {
+                            window.alert("invalid e-mail id");
+                        }
+                    else if(/./g.test(mail)==false)
+                        {
+                            window.alert("invalid e-mail id");
+                        }
+                }
+            </script>
+        </div>
+    </body>
+</html>
