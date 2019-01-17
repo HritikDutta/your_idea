@@ -20,7 +20,10 @@ module.exports = function (app) {
     })
 
     app.post('/post', urlencodedParser, (req, res) => {
-        postList.push(req.body)
+        //Don't push if title is empty
+        if (req.body.title != '') {
+            postList.push(req.body)
+        }
         res.json(postList)
     })
 
