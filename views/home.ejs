@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/post.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+</head>
+<body>
+    <div id="navbar">
+        <div id="navdata">
+            <h1>Website Title</h1>
+        </div>
+    </div>
+    
+    <ul class="feed">
+        <% for (var i = 0; i < posts.length; i++) { %>
+        <li>
+            <div class="post">
+                <h2><%= posts[i].title %></h2>
+                <p><%= posts[i].description %></p>
+            </div>
+        </li>
+        <% } %>
+    </ul>
+</body>
+</html>
