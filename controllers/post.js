@@ -11,10 +11,6 @@ var postList = [
 
 module.exports = function (app) {
 
-    app.get('/', (req, res) => {
-        res.render('home', {posts: postList})
-    })
-
     app.get('/post', (req, res) => {
         res.render('post', {posts: postList})
     })
