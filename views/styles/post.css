@@ -94,7 +94,7 @@ input[type="checkbox"]:checked + label span::before {
 #options {
 
     display: grid;
-    grid-template-columns: 83.5% 16.5%;
+    grid-template-columns: 85.2% 14.8%;
     grid-gap: 0;
 }
 
